@@ -1,0 +1,16 @@
+{
+  // 현재 옵션 기준으로 TS를 재검사가 필요한 경우 발생할 수 있음
+
+  // 상세 옵션
+  "compilerOptions": {
+    "target": "ES5", // 컴파일 결과물 JS 버전 설정
+    "module": "ESNext", // 모듈 옵션 (CommonJS, ES)
+    "outDir": "dist", // 컴파일된 js 파일의 위치
+    "strict": true, // 엄격한 타입 체크 (매개변수의 타입 등)
+    "moduleDetection": "force" // TS 파일을 어떤 모듈로 감지할 것인가 (force는 컴파일하면서 모듈 시스템 키워드를 자동으로 추가)
+  },
+  "include": ["src"], // 컴파일 ts 파일 대상 범위,
+  "ts-node": {
+    "esm": true // ts-node는 CommonJS로 동작하는데 이를 esm으로 변경
+  }
+}
