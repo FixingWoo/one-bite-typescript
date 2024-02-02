@@ -19,3 +19,5 @@ class List<T> {
 
 const numberList = new List([1, 2, 3]);
 const stringList = new List(["1", "2", "3"]);
+
+// 생성자 인수 값 기준으로 타입을 추론함
