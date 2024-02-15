@@ -1,0 +1,12 @@
+// JS 확장자의 파일로부터 JSX 문법 해석 불가능
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "CommonJS",
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": true, // 디폴트로 내보낸 값이 없는 모듈 처리
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}
